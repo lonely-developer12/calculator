@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+ 
+  </head>
+  <body>
+    <div id="resultArea">0</div>
+    <table>
+        <tr>
+            <td ></td>
+            <td ></td>
+            <td ></td>
+            <td onclick="deleteLast()">DEL</td>
+        </tr>
+      <tr>
+        <td onclick="appendOperation(7)">7</td>
+        <td onclick="appendOperation(8)">8</td>
+        <td onclick="appendOperation(9)">9</td>
+        <td class="highligt"onclick="appendOperation('/')">/</td>
+      </tr>
+      <tr>
+        <td onclick="appendOperation(4)">4</td>
+        <td onclick="appendOperation(5)">5</td>
+        <td onclick="appendOperation(6)">6</td>
+        <td class="highligt" onclick="appendOperation('*')">X</td>
+      </tr>
+      <tr>
+        <td onclick="appendOperation(1)">1</td>
+        <td onclick="appendOperation(2)">2</td>
+        <td onclick="appendOperation(3)">3</td>
+        <td class="highligt" onclick="appendOperation('+')">+</td>
+      </tr>
+
+      <tr>
+        <td onclick="appendOperation(0)">0</td>
+        <td onclick="appendOperation('.')">,</td>
+        <td id="result" onclick="calculateResult()">=</td>
+        <td class="highligt"onclick="appendOperation('-')">-</td>
+      </tr>
+    </table>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
